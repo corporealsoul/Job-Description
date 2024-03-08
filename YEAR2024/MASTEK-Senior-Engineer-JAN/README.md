@@ -26,3 +26,5 @@ source /home/anup/Job-Description/YEAR2024/MASTEK-Senior-Engineer-JAN/.venv/bin/
 (.venv) [anup@automation-and-continuous-delivery MASTEK-Senior-Engineer-JAN]$ git status
 
 
+### requirements.txt
+(.venv) (.venv) [anup@automation-and-continuous-delivery MASTEK-Senior-Engineer-JAN]$ pip freeze | less
