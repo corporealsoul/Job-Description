@@ -4,25 +4,27 @@ on: [push]
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Set up Python 3.8
-      uses: actions/setup-python@v1
-      with:
-        python-version: 3.8
-    - name: Install dependencies
-      run: |
-        make install
-    - name: Lint with pylint
-      run: |
-        make lint
-    - name: Test with pytest
-      run: |
-        make test
-    - name: Format code
-      run: |
-        make format
-    
+      - uses: actions/checkout@v2
+      - name: Set up Python 3.9
+        uses: actions/setup-python@v1
+        with:
+          python-version: 3.9
+      - name: Install dependencies (change if needed)
+        working-directory: ./YEAR2024/MASTEK-Senior-Engineer-JAN  # Set working directory here
+        run: |
+          make install  # Adjust command if your Makefile is different
+      - name: Lint with pylint
+        working-directory: ./YEAR2024/MASTEK-Senior-Engineer-JAN  # Set working directory here
+        run: |
+          #make lint  # Adjust command if your Makefile is different
+      - name: Test with pytest
+        working-directory: ./YEAR2024/MASTEK-Senior-Engineer-JAN  # Set working directory here
+        run: |
+          #make test  # Adjust command if your Makefile is different
+      - name: Format code
+        working-directory: ./YEAR2024/MASTEK-Senior-Engineer-JAN  # Set working directory here
+        run: |
+          #make format  # Adjust command if your Makefile is different
