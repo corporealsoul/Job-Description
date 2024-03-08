@@ -1,39 +1,28 @@
 name: Python application test with Github Actions
 
-on:
-  push:
-    branches:
-      - 'autoupdate'  # Adjust trigger if needed
+on: [push]
 
 jobs:
   build:
-  
+
     runs-on: ubuntu-latest
-    
+
     steps:
-      - uses: actions/checkout@v2
-      
-      - name: Set up Python 3.9
-        uses: actions/setup-python@v3
-        with:
-          python-version: '3.9'  # Specify the correct version
-          
-      - name: Install dependencies
-        working-directory: ./YEAR2024/MASTEK-Senior-Engineer-JAN
-        run: |
-          make install
-          
-      - name: Lint with pylint
-        working-directory: ./YEAR2024/MASTEK-Senior-Engineer-JAN
-        run: |
-          #make lint  # Uncomment to execute
-          
-      - name: Test with pytest
-        working-directory: ./YEAR2024/MASTEK-Senior-Engineer-JAN
-        run: |
-          #make test  # Uncomment to execute
-          
-      - name: Format code
-        working-directory: ./YEAR2024/MASTEK-Senior-Engineer-JAN
-        run: |
-          #make format  # Uncomment to execute
+    - uses: actions/checkout@v2
+    - name: Set up Python 3.8
+      uses: actions/setup-python@v1
+      with:
+        python-version: 3.8
+    - name: Install dependencies
+      run: |
+        make install
+    - name: Lint with pylint
+      run: |
+        make lint
+    - name: Test with pytest
+      run: |
+        make test
+    - name: Format code
+      run: |
+        make format
+    
