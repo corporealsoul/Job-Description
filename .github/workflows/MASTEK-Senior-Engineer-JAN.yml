@@ -2,22 +2,27 @@ name: Python application test with Github Actions
 on: [push]
 jobs:
   build:
-    runs-on: Red Hat Enterprise Linux 9.3 (Plow)
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
     - name: Set up Python 3.9
+      working-directory: ./YEAR2024/MASTEK-Senior-Engineer-JAN
       uses: actions/setup-python@v1
       with:
         python-version: 3.8
     - name: Install dependencies
+      working-directory: ./YEAR2024/MASTEK-Senior-Engineer-JAN
       run: |
         make install
     - name: Lint with pylint
+      working-directory: ./YEAR2024/MASTEK-Senior-Engineer-JAN
       run: |
         # make lint
     - name: Test with pytest
+      working-directory: ./YEAR2024/MASTEK-Senior-Engineer-JAN
       run: |
         # make test
     - name: Format code
+      working-directory: ./YEAR2024/MASTEK-Senior-Engineer-JAN
       run: |
         # make format
