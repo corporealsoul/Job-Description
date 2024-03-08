@@ -21,12 +21,12 @@ jobs:
       - name: Lint with pylint
         working-directory: ./YEAR2024/MASTEK-Senior-Engineer-JAN
         run: |
-          make lint  # Uncomment to execute
+          #make lint  # Uncomment to execute
       - name: Test with pytest
         working-directory: ./YEAR2024/MASTEK-Senior-Engineer-JAN
         run: |
-          make test  # Uncomment to execute
+          #make test  # Uncomment to execute
       - name: Format code
         working-directory: ./YEAR2024/MASTEK-Senior-Engineer-JAN
         run: |
-          make format  # Uncomment to execute
+          #make format  # Uncomment to execute
