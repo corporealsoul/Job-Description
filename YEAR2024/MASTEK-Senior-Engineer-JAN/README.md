@@ -24,7 +24,9 @@ source /home/anup/Job-Description/YEAR2024/MASTEK-Senior-Engineer-JAN/.venv/bin/
 ### Makefile 
 (.venv) [anup@automation-and-continuous-delivery MASTEK-Senior-Engineer-JAN]$ make install
 (.venv) [anup@automation-and-continuous-delivery MASTEK-Senior-Engineer-JAN]$ git status
-
+(.venv) [anup@automation-and-continuous-delivery MASTEK-Senior-Engineer-JAN]$ make format
 
 ### requirements.txt
-(.venv) (.venv) [anup@automation-and-continuous-delivery MASTEK-Senior-Engineer-JAN]$ pip freeze | less
+(.venv) [anup@automation-and-continuous-delivery MASTEK-Senior-Engineer-JAN]$ pip freeze | less
+
+
