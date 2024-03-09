@@ -1,16 +1,23 @@
 install:
-	#install commands
+	# Install Commands
 	pip install --upgrade pip &&\
 		pip install -r requirements.txt
+
 format:
-	#format code
+	# Format Code
 	black *.py lib/*.py
+
 lint:
-	#flake8 or #pylint
+	# Flake8 or Pylint
 	pylint --disable=R,C *.py lib/*.py
+
 test:
-	#test
+	# Test
+
+build:
+	# Build Container
+
 deploy:
-	#deploy
+	# Deploy
 
 all: install format lint test deploy
