@@ -30,3 +30,9 @@ source /home/anup/Job-Description/YEAR2024/MASTEK-Senior-Engineer-JAN/.venv/bin/
 (.venv) [anup@automation-and-continuous-delivery MASTEK-Senior-Engineer-JAN]$ pip freeze | less
 
 
+# CLI Fire
+(.venv) (.venv) [anup@automation-and-continuous-delivery MASTEK-Senior-Engineer-JAN]$ sudo chmod 754 cli-fire.py
+(.venv) (.venv) [anup@automation-and-continuous-delivery MASTEK-Senior-Engineer-JAN]$ ./cli-fire.py --help
+(.venv) (.venv) [anup@automation-and-continuous-delivery MASTEK-Senior-Engineer-JAN]$ ./cli-fire.py
+(.venv) (.venv) [anup@automation-and-continuous-delivery MASTEK-Senior-Engineer-JAN]$ ./cli-fire.py --length 10
+(.venv) (.venv) [anup@automation-and-continuous-delivery MASTEK-Senior-Engineer-JAN]$ ./cli-fire.py --length 10 | less
