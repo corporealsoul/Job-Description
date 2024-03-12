@@ -37,7 +37,14 @@ source /home/anup/Job-Description/YEAR2024/MASTEK-Senior-Engineer-JAN/.venv/bin/
 (.venv) (.venv) [anup@automation-and-continuous-delivery MASTEK-Senior-Engineer-JAN]$ ./cli-fire.py --length 10
 (.venv) (.venv) [anup@automation-and-continuous-delivery MASTEK-Senior-Engineer-JAN]$ ./cli-fire.py --length 10 | less
 (.venv) (.venv) [anup@automation-and-continuous-delivery MASTEK-Senior-Engineer-JAN]$ ./cli-fire.py search_wiki "Barack"
+(.venv) (.venv) [anup@automation-and-continuous-delivery MASTEK-Senior-Engineer-JAN]$ ./cli-fire.py phrase "Barack"
 
 
 # Installating required packages
 (.venv) (.venv) [anup@automation-and-continuous-delivery MASTEK-Senior-Engineer-JAN]$ pip install ipython
+(.venv) (.venv) [anup@automation-and-continuous-delivery MASTEK-Senior-Engineer-JAN]$ python -m textblob.download_corpora
+
+# Browser
+http://localhost:8080/search/barack
+http://localhost:8080/docs
+http://localhost:8080/phrase/obama
