@@ -1,8 +1,7 @@
 install:
 	# Install Commands
 	pip install --upgrade pip && pip install -r requirements.txt && pip install httpx
-	python -m pip install nltk
-	python -m nltk.download brown 
+	python -m pip install nltk 
 
 format:
 	# Format Code
