@@ -1,7 +1,6 @@
 install:
 	# Install Commands
-	pip install --upgrade pip && pip install -r requirements.txt && pip install httpx
-	python -m pip install nltk 
+	pip install --upgrade pip && pip install -r requirements.txt && pip install httpx && pip install nltk 
 
 format:
 	# Format Code
