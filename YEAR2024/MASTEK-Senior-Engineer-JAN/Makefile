@@ -1,6 +1,8 @@
 install:
 	# Install Commands
 	pip install --upgrade pip && pip install -r requirements.txt && pip install httpx
+	python -m pip install nltk
+	python -m nltk.download brown 
 
 format:
 	# Format Code
@@ -12,9 +14,6 @@ lint:
 
 test:
 	# Test
-	# python -m pytest -vv --cov=lib ./lib/test_logic.py
-	# python -m pytest -vv --cov=lib --cov=main test_*.py
-	# python -m pytest -vv --cov=lib --cov=main test_*.py
 	python -m pytest -vv --cov=lib --cov=main test_*.py
 
 build:
